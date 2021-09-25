@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot', sans-serif;
+}
+html{
+    background-color: white;
+}
+@import url(/assets/fonts/Poppins-Light.ttf);
+
+
+/*-----root---*/
+.root{
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 5vh 200vh 10vh;
+    grid-template-areas: "header header header"
+                         "asideLeft main asideRight"
+                         "footer footer footer";
+
+                         background-color: black;
+}
+
+
+
+/*--------aside----------*/
+.aside-left{
+    grid-area: asideLeft;
+}
+.aside-right{
+    grid-area: asideRight;
+
+}
+
+
+
+/*-------header----------*/
+header{
+    grid-area: header;
+}
+.header{
+    
+    background-color: black;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+.menu:hover{
+    box-shadow: 0.1em 0.1em 0.4em rgba(200, 200, 200, 0.2);
+    transition: 0.2s;
+}
+
+/*-------nav-----------*/
+
+
+.menu nav{
+    grid-area: nav;
+}
+
+.nav-nav ul{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    justify-content: right;
+}
+
+.nav-nav li{
+    margin-right:60px;
+}
+.nav-nav a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+}
+.nav-nav a:hover{
+    color: #ff904e;
+}
+
+.container-jm:hover{
+    color: white;
+}
+
+/*-----logo-------*/
+.container-logo{
+    grid-area: logo;
+}
+
+.container-logo{
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+.container-logo h2{
+    color: white;
+    font-family: 'Poppin-light', sans-serif;
+    font-weight: 700;
+}
+
+.container-logo h2:hover{
+    color: #ff904e;
+}
+
+.sub-container-logo{
+    display: flex;
+    max-width: 50%;
+    gap: 5px;
+}
+
+.container-jm{
+    color: #ff904e;
+    font-size: 25px;
+}
+
+/*--------main contact content-------*/
+
+.contact-content-main{
+    grid-area: main;
+    margin-top: 50px;
+    background-color: black;
+}
+.before-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: "mel jess"
+                         "mel jess";
+}
+
+.contact-melissa{
+    grid-area: mel;
+    text-align: center;
+    max-width: 100%;
+    background-color: black;
+}
+
+.contact-jessica{
+    grid-area: jess;
+    text-align: center;
+    max-width: 100%;
+    background-color: black;
+}
+
+.contact-melissa p{
+    color: white;
+    padding: 30px;
+}
+
+.contact-melissa h2{
+    color: #ff904e;
+    margin-top: 40px;
+}
+
+.contact-melissa img{
+    max-height: 250px;
+    border-radius: 40%;
+    margin-top: 40px;
+}
+
+.contact-jessica p{
+    color: white;
+    padding: 30px;
+}
+
+.contact-jessica h2{
+    color: #ff904e;
+    margin-top: 40px;
+}
+
+.contact-jessica img{
+    max-height: 250px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+/*--------footer-----------*/
+footer{
+    grid-area:footer;
+}
+.footer{
+    background-color: #FAFAFA;
+    text-align: center;
+}
+.arr{
+    margin-top: 20px;
+}
+
+
